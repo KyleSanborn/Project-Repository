@@ -1,0 +1,46 @@
+.box {
+  background-color: white;
+  width: 1500px;
+  border: 20px solid #c8102e;
+  padding: 50px;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline #c8102e;
+}
+
+li {
+  text-align: center;
+  color: #c8102e;
+  list-style-image: url(images/rangersringlogomini2.png);
+}
+
+li a {
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+  color: inherit;
+  text-decoration: none;
+  font-size: large;
+}
+
+.sitemap1 {
+  float: left;
+  width: 250px;
+  margin-left: 150px;
+}
+
+.sitemap2 {
+  float: right;
+  width: 250px;
+  margin-right: 150px;
+}
+
+.sitemap3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

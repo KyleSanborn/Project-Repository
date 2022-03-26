@@ -1,0 +1,54 @@
+.box {
+  background-color: white;
+  width: 1500px;
+  border: 20px solid #c8102e;
+  padding: 50px;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline #c8102e;
+}
+table {
+  width: 80%;
+}
+table,
+td {
+  border: 1px black solid;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  color: black;
+}
+
+td.metro {
+  padding: 10px 30px;
+  text-align: center;
+  width: 100px;
+}
+
+td > .cell,
+.stats {
+  position: relative;
+  padding: 5px;
+}
+
+td.stats,
+td.metro {
+  background-color: lightgray;
+}
+
+td.rangers {
+  background-color: lightskyblue;
+}
+
+td.rangers2 {
+  background-color: #c8102e;
+  color: white;
+}
+
+p {
+  text-align: center;
+}

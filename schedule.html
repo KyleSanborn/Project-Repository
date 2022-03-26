@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="schedule.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        overflow: hidden;
+        background-color: #0033a0;
+        padding: 20px 10px;
+      }
+
+      .header a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 12px 40px 12px 40px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+      }
+
+      .header a.fanring {
+        font-size: 18px;
+        font-style: italic;
+      }
+
+      .header a:hover {
+        background-color: #c8102e;
+        color: white;
+      }
+
+      .header a.active {
+        color: white;
+      }
+
+      .header-center {
+        float: center;
+        font-style: italic;
+      }
+
+      .header-right a {
+        float: right;
+        font-size: 18px;
+        font-style: italic;
+      }
+      .logo {
+        width: 50px;
+        float: right;
+        margin-right: 5px;
+      }
+
+      @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        .header-center {
+          float: none;
+        }
+
+        .header-right {
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="fanring">The Rangers Fan Ring</a>
+      <div class="header-center">
+        <a class="active" href="schedule.html">Schedule</a>
+        <a href="divisionstandings.html">Divsion Standings</a>
+        <a href="history.html">History</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="header-right">
+        <a href="sitemap.html">Sitemap</a>
+      </div>
+      <div class="logo">
+        <img
+          class="logo"
+          src="images/rangersringlogo.png"
+          alt="rangersringlogo"
+        />
+      </div>
+    </div>
+
+    <div class="box">
+      <h1>Schedule:</h1>
+      <table>
+        <caption>
+          <h2>March 2022</h2>
+          <h3 class="blue">Blue = Home Game</h3>
+          <h3 class="red">Red = Away Game</h3>
+        </caption>
+        <thead>
+          <tr>
+            <td class="weekdays">Sun</td>
+            <td class="weekdays">Mon</td>
+            <td class="weekdays">Tue</td>
+            <td class="weekdays">Wed</td>
+            <td class="weekdays">Thu</td>
+            <td class="weekdays">Fri</td>
+            <td class="weekdays">Sat</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="cell"><span class="day">1</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">2</span>NYR 5, STL 3</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">3</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">4</span>NYR 3, NJD 1</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">5</span> <br /></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="awaygame">
+              <div class="cell"><span class="day">6</span>NYR 4, WPG 1</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">7</span> <br /></div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">8</span>MIN 5, NYR 2</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">9</span> <br /></div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">10</span>STL 6, NYR 2</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">11</span> <br /></div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">12</span>NYR 7, DAL 4</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cell"><span class="day">13</span> <br /></div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">14</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell">
+                <span class="day">15</span>NYR 4, ANA 3 (OT)
+              </div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">16</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">17</span>NYI 2, NYR 1</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">18</span> <br /></div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">19</span>NYR 2, TBL 1</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="awaygame">
+              <div class="cell"><span class="day">20</span>NYR 2, CAR 0</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">21</span> <br /></div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">22</span>NJD 7, NYR 4</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">23</span> <br /></div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">24</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">25</span>VS PIT</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">26</span> <br /></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="homegame">
+              <div class="cell"><span class="day">27</span>VS BUF</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">28</span> <br /></div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">29</span>@ PIT</div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">30</span>@ DET</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">31</span> <br /></div>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

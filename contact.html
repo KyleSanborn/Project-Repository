@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Contact</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="contact.css" />
     <style>
       * {
         box-sizing: border-box;
@@ -61,7 +61,6 @@
         font-size: 18px;
         font-style: italic;
       }
-
       .logo {
         width: 50px;
         float: right;
@@ -107,27 +106,60 @@
     </div>
 
     <div class="box">
-      <h1>Welcome to The Rangers Ring!</h1>
-      <img class="homeimg" src="images/rangershome.jpg" alt="rangershome" />
-      <p>
-        Here in the Rangers Ring, we're crazy about all things New York Ranger
-        related. Given the recent success of the Rangers this season, we wanted
-        to create a place where it is easy for fellow fans to follow the NHL
-        playoff hunt! We like to focus mostly on the Ranger's schedule and
-        division standings as they chase after first place in the eastern
-        conference. We also aim to bring the playoff history of the New York
-        Rangers back to life by sharing some of our favorite memories from past
-        playoff runs!
-      </p>
-      <img class="homeimg" src="images/rangershome1.jpg" alt="rangershome1" />
-      <p>
-        We hope that you enjoy our content and please enjoy exploring our
-        website! If you would like to contact us or let us know what we can
-        improve on, please let us know via our contact page! Our contact page is
-        accessable through our navigation bar or sitemap!
-      </p>
-      <img class="homeimg" src="images/rangershome2.jpg" alt="rangershome2" />
-      <p>Last, but most certainly not least... Let's Go Rangers!!</p>
+      <h1>Contact Us:</h1>
+      <img class="contact1" src="images/contact1.jpg" alt="contact1" />
+      <br />
+      <div class="form">
+        <form action="https://oim-apis.herokuapp.com/form2" method="post">
+          <div>
+            <label for="firstname-input">First Name:</label>
+            <input
+              type="text"
+              id="firstname-input"
+              name="first name"
+              placeholder="First Name"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="lastname-input">Last Name: </label>
+            <input
+              type="text"
+              name="last name"
+              id="lastname-input"
+              placeholder="Last Name"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="email-input">Email:</label>
+            <input
+              type="text"
+              id="email-input"
+              name="email"
+              placeholder="Email address"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="comments">Leave a Comment: </label>
+          </div>
+          <div class="textbox">
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              cols="25"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <br />
+          <div>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
