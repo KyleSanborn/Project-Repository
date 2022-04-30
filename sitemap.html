@@ -66,22 +66,6 @@
         float: right;
         margin-right: 5px;
       }
-
-      @media screen and (max-width: 500px) {
-        .header a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-
-        .header-center {
-          float: none;
-        }
-
-        .header-right {
-          float: none;
-        }
-      }
     </style>
   </head>
   <body>
@@ -106,8 +90,20 @@
     </div>
     <div class="box">
       <h1>Sitemap:</h1>
-      <img class="sitemap1" src="images/sitemap1.jpg" alt="sitemap1" />
-      <img class="sitemap2" src="images/sitemap2.jpg" alt="sitemap2" />
+      <div id="spin" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        <img
+          id="sitemap1"
+          src="images/sitemap1.jpg"
+          alt="sitemap1"
+          title="Ryan Lindgren"
+        />
+        <img
+          id="sitemap2"
+          src="images/sitemap2.jpg"
+          alt="sitemap2"
+          title="Alexis Lafreniere"
+        />
+      </div>
       <li><a href="index.html"> Home Page</a></li>
       <br />
       <li><a href="schedule.html"> Schedule</a></li>
@@ -118,8 +114,16 @@
       <br />
       <li><a href="contact.html"> Contact Us</a></li>
       <br />
-
-      <img class="sitemap3" src="images/sitemap3.jpg" alt="sitemap3" />
+      <br />
     </div>
+    <script>
+      function mouseDown() {
+        document.getElementById("spin").style.transform = "rotateY(180deg)";
+      }
+
+      function mouseUp() {
+        document.getElementById("spin").style.transform = "rotateY(0deg)";
+      }
+    </script>
   </body>
 </html>

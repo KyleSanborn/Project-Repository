@@ -66,22 +66,6 @@
         float: right;
         margin-right: 5px;
       }
-
-      @media screen and (max-width: 500px) {
-        .header a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-
-        .header-center {
-          float: none;
-        }
-
-        .header-right {
-          float: none;
-        }
-      }
     </style>
   </head>
   <body>
@@ -105,300 +89,616 @@
       </div>
     </div>
 
-    <div class="box">
-      <h1>Divison Standings:</h1>
-      <!-- start standings code -->
-      <table>
-        <thead>
-          <tr>
-            <td class="metro">Metropolitan</td>
-            <td class="stats">GP</td>
-            <td class="stats">W</td>
-            <td class="stats">L</td>
-            <td class="stats">OT</td>
-            <td class="stats">PTS</td>
-            <td class="stats">P%</td>
-            <td class="stats">GF</td>
-            <td class="stats">GA</td>
-            <td class="stats">DIF</td>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Carolina -->
-          <tr>
-            <td>
-              <div class="metro">1. Carolina</div>
-            </td>
-            <td>
-              <div class="cell">64</div>
-            </td>
-            <td>
-              <div class="cell">42</div>
-            </td>
-            <td>
-              <div class="cell">15</div>
-            </td>
-            <td>
-              <div class="cell">7</div>
-            </td>
-            <td class="rangers">
-              <div class="cell">91</div>
-            </td>
-            <td>
-              <div class="cell">.711</div>
-            </td>
-            <td>
-              <div class="cell">209</div>
-            </td>
-            <td>
-              <div class="cell">154</div>
-            </td>
-            <td>
-              <div class="cell">+55</div>
-            </td>
-          </tr>
-          <!-- Pitsburg -->
-          <tr>
-            <td>
-              <div class="metro">2. Pittsburgh</div>
-            </td>
-            <td>
-              <div class="cell">66</div>
-            </td>
-            <td>
-              <div class="cell">39</div>
-            </td>
-            <td>
-              <div class="cell">16</div>
-            </td>
-            <td>
-              <div class="cell">10</div>
-            </td>
-            <td class="rangers">
-              <div class="cell">88</div>
-            </td>
-            <td>
-              <div class="cell">.667</div>
-            </td>
-            <td>
-              <div class="cell">213</div>
-            </td>
-            <td>
-              <div class="cell">172</div>
-            </td>
-            <td>
-              <div class="cell">+41</div>
-            </td>
-          </tr>
-          <!-- New York -->
-          <tr>
-            <td class="rangers">
-              <div class="metro">3. NY Rangers</div>
-            </td>
-            <td class="rangers">
-              <div class="cell">64</div>
-            </td>
-            <td class="rangers">
-              <div class="cell">40</div>
-            </td>
-            <td class="rangers">
-              <div class="cell">19</div>
-            </td>
-            <td class="rangers">
-              <div class="cell">5</div>
-            </td>
-            <td class="rangers2">
-              <div class="cell">85</div>
-            </td>
-            <td>
-              <div class="cell">.664</div>
-            </td>
-            <td>
-              <div class="cell">193</div>
-            </td>
-            <td>
-              <div class="cell">167</div>
-            </td>
-            <td>
-              <div class="cell">+26</div>
-            </td>
-          </tr>
-          <!-- Washington -->
-          <tr>
-            <td>
-              <div class="metro">4. NY Washington</div>
-            </td>
-            <td>
-              <div class="cell">65</div>
-            </td>
-            <td>
-              <div class="cell">35</div>
-            </td>
-            <td>
-              <div class="cell">20</div>
-            </td>
-            <td>
-              <div class="cell">10</div>
-            </td>
-            <td>
-              <div class="cell">80</div>
-            </td>
-            <td>
-              <div class="cell">.615</div>
-            </td>
-            <td>
-              <div class="cell">216</div>
-            </td>
-            <td>
-              <div class="cell">185</div>
-            </td>
-            <td>
-              <div class="cell">+31</div>
-            </td>
-          </tr>
-          <!-- Columbus -->
-          <tr>
-            <td>
-              <div class="metro">5. Columbus</div>
-            </td>
-            <td>
-              <div class="cell">64</div>
-            </td>
-            <td>
-              <div class="cell">32</div>
-            </td>
-            <td>
-              <div class="cell">29</div>
-            </td>
-            <td>
-              <div class="cell">3</div>
-            </td>
-            <td>
-              <div class="cell">80</div>
-            </td>
-            <td>
-              <div class="cell">.523</div>
-            </td>
-            <td>
-              <div class="cell">211</div>
-            </td>
-            <td>
-              <div class="cell">239</div>
-            </td>
-            <td>
-              <div class="cell">-28</div>
-            </td>
-          </tr>
-          <!-- NY Islanders -->
-          <tr>
-            <td>
-              <div class="metro">6. NY Islanders</div>
-            </td>
-            <td>
-              <div class="cell">62</div>
-            </td>
-            <td>
-              <div class="cell">28</div>
-            </td>
-            <td>
-              <div class="cell">25</div>
-            </td>
-            <td>
-              <div class="cell">9</div>
-            </td>
-            <td>
-              <div class="cell">65</div>
-            </td>
-            <td>
-              <div class="cell">.524</div>
-            </td>
-            <td>
-              <div class="cell">170</div>
-            </td>
-            <td>
-              <div class="cell">168</div>
-            </td>
-            <td>
-              <div class="cell">+2</div>
-            </td>
-          </tr>
-          <!-- Philadelphia -->
-          <tr>
-            <td>
-              <div class="metro">7. Philadelphia</div>
-            </td>
-            <td>
-              <div class="cell">64</div>
-            </td>
-            <td>
-              <div class="cell">21</div>
-            </td>
-            <td>
-              <div class="cell">32</div>
-            </td>
-            <td>
-              <div class="cell">11</div>
-            </td>
-            <td>
-              <div class="cell">53</div>
-            </td>
-            <td>
-              <div class="cell">.414</div>
-            </td>
-            <td>
-              <div class="cell">164</div>
-            </td>
-            <td>
-              <div class="cell">222</div>
-            </td>
-            <td>
-              <div class="cell">-58</div>
-            </td>
-          </tr>
-          <!-- New Jersey -->
-          <tr>
-            <td>
-              <div class="metro">8. New Jersey</div>
-            </td>
-            <td>
-              <div class="cell">64</div>
-            </td>
-            <td>
-              <div class="cell">23</div>
-            </td>
-            <td>
-              <div class="cell">36</div>
-            </td>
-            <td>
-              <div class="cell">5</div>
-            </td>
-            <td>
-              <div class="cell">51</div>
-            </td>
-            <td>
-              <div class="cell">.398</div>
-            </td>
-            <td>
-              <div class="cell">197</div>
-            </td>
-            <td>
-              <div class="cell">233</div>
-            </td>
-            <td>
-              <div class="cell">-36</div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br />
-      <p>
-        The Rangers currently boast 85 points this season, just 6 points out of
-        first place in the Metropolitan Divsion. Third place will likely secure
-        them a wildcard spot, however, the home ice advantage that comes with
-        winning the division is highly sought after. With the end of the NHL
-        regular season drawing near a close, we are excited to watch their hunt
-        for first place!
-      </p>
+    <div id="begin">
+      <div class="box">
+        <h1>Divison Standings:</h1>
+        <!-- start standings code -->
+        <table>
+          <thead>
+            <tr>
+              <td class="metro">Metropolitan</td>
+              <td class="stats">GP</td>
+              <td class="stats">W</td>
+              <td class="stats">L</td>
+              <td class="stats">OT</td>
+              <td class="stats">PTS</td>
+              <td class="stats">P%</td>
+              <td class="stats">GF</td>
+              <td class="stats">GA</td>
+              <td class="stats">DIF</td>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Carolina -->
+            <tr>
+              <td>
+                <div class="metro">1. Carolina</div>
+              </td>
+              <td>
+                <div class="cell">64</div>
+              </td>
+              <td>
+                <div class="cell">42</div>
+              </td>
+              <td>
+                <div class="cell">15</div>
+              </td>
+              <td>
+                <div class="cell">7</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">91</div>
+              </td>
+              <td>
+                <div class="cell">.711</div>
+              </td>
+              <td>
+                <div class="cell">209</div>
+              </td>
+              <td>
+                <div class="cell">154</div>
+              </td>
+              <td>
+                <div class="cell">+55</div>
+              </td>
+            </tr>
+            <!-- Pitsburg -->
+            <tr>
+              <td>
+                <div class="metro">2. Pittsburgh</div>
+              </td>
+              <td>
+                <div class="cell">66</div>
+              </td>
+              <td>
+                <div class="cell">39</div>
+              </td>
+              <td>
+                <div class="cell">16</div>
+              </td>
+              <td>
+                <div class="cell">10</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">88</div>
+              </td>
+              <td>
+                <div class="cell">.667</div>
+              </td>
+              <td>
+                <div class="cell">213</div>
+              </td>
+              <td>
+                <div class="cell">172</div>
+              </td>
+              <td>
+                <div class="cell">+41</div>
+              </td>
+            </tr>
+            <!-- New York -->
+            <tr>
+              <td class="rangers">
+                <div class="metro">3. NY Rangers</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">64</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">40</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">19</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">5</div>
+              </td>
+              <td class="rangers2">
+                <div class="cell">85</div>
+              </td>
+              <td>
+                <div class="cell">.664</div>
+              </td>
+              <td>
+                <div class="cell">193</div>
+              </td>
+              <td>
+                <div class="cell">167</div>
+              </td>
+              <td>
+                <div class="cell">+26</div>
+              </td>
+            </tr>
+            <!-- Washington -->
+            <tr>
+              <td>
+                <div class="metro">4. NY Washington</div>
+              </td>
+              <td>
+                <div class="cell">65</div>
+              </td>
+              <td>
+                <div class="cell">35</div>
+              </td>
+              <td>
+                <div class="cell">20</div>
+              </td>
+              <td>
+                <div class="cell">10</div>
+              </td>
+              <td>
+                <div class="cell">80</div>
+              </td>
+              <td>
+                <div class="cell">.615</div>
+              </td>
+              <td>
+                <div class="cell">216</div>
+              </td>
+              <td>
+                <div class="cell">185</div>
+              </td>
+              <td>
+                <div class="cell">+31</div>
+              </td>
+            </tr>
+            <!-- Columbus -->
+            <tr>
+              <td>
+                <div class="metro">5. Columbus</div>
+              </td>
+              <td>
+                <div class="cell">64</div>
+              </td>
+              <td>
+                <div class="cell">32</div>
+              </td>
+              <td>
+                <div class="cell">29</div>
+              </td>
+              <td>
+                <div class="cell">3</div>
+              </td>
+              <td>
+                <div class="cell">80</div>
+              </td>
+              <td>
+                <div class="cell">.523</div>
+              </td>
+              <td>
+                <div class="cell">211</div>
+              </td>
+              <td>
+                <div class="cell">239</div>
+              </td>
+              <td>
+                <div class="cell">-28</div>
+              </td>
+            </tr>
+            <!-- NY Islanders -->
+            <tr>
+              <td>
+                <div class="metro">6. NY Islanders</div>
+              </td>
+              <td>
+                <div class="cell">62</div>
+              </td>
+              <td>
+                <div class="cell">28</div>
+              </td>
+              <td>
+                <div class="cell">25</div>
+              </td>
+              <td>
+                <div class="cell">9</div>
+              </td>
+              <td>
+                <div class="cell">65</div>
+              </td>
+              <td>
+                <div class="cell">.524</div>
+              </td>
+              <td>
+                <div class="cell">170</div>
+              </td>
+              <td>
+                <div class="cell">168</div>
+              </td>
+              <td>
+                <div class="cell">+2</div>
+              </td>
+            </tr>
+            <!-- Philadelphia -->
+            <tr>
+              <td>
+                <div class="metro">7. Philadelphia</div>
+              </td>
+              <td>
+                <div class="cell">64</div>
+              </td>
+              <td>
+                <div class="cell">21</div>
+              </td>
+              <td>
+                <div class="cell">32</div>
+              </td>
+              <td>
+                <div class="cell">11</div>
+              </td>
+              <td>
+                <div class="cell">53</div>
+              </td>
+              <td>
+                <div class="cell">.414</div>
+              </td>
+              <td>
+                <div class="cell">164</div>
+              </td>
+              <td>
+                <div class="cell">222</div>
+              </td>
+              <td>
+                <div class="cell">-58</div>
+              </td>
+            </tr>
+            <!-- New Jersey -->
+            <tr>
+              <td>
+                <div class="metro">8. New Jersey</div>
+              </td>
+              <td>
+                <div class="cell">64</div>
+              </td>
+              <td>
+                <div class="cell">23</div>
+              </td>
+              <td>
+                <div class="cell">36</div>
+              </td>
+              <td>
+                <div class="cell">5</div>
+              </td>
+              <td>
+                <div class="cell">51</div>
+              </td>
+              <td>
+                <div class="cell">.398</div>
+              </td>
+              <td>
+                <div class="cell">197</div>
+              </td>
+              <td>
+                <div class="cell">233</div>
+              </td>
+              <td>
+                <div class="cell">-36</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <p id="innerText">
+          The Rangers currently boast 85 points this season, just 6 points out
+          of first place in the Metropolitan Divsion. Third place will likely
+          secure them a wildcard spot, however, the home ice advantage that
+          comes with winning the division is highly sought after. With the end
+          of the NHL regular season drawing near a close, we are excited to
+          watch their hunt for first place!
+          <button id="forFinal" onclick="showFinal()">
+            Click Here to See How the Rangers Finished!
+          </button>
+        </p>
+      </div>
     </div>
+
+    <!-- ****Start updated stats***** -->
+    <div id="final">
+      <div class="box">
+        <h1>Divison Standings:</h1>
+        <!-- start standings code -->
+        <table>
+          <thead>
+            <tr>
+              <td class="metro">Metropolitan</td>
+              <td class="stats">GP</td>
+              <td class="stats">W</td>
+              <td class="stats">L</td>
+              <td class="stats">OT</td>
+              <td class="stats">PTS</td>
+              <td class="stats">P%</td>
+              <td class="stats">GF</td>
+              <td class="stats">GA</td>
+              <td class="stats">DIF</td>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Carolina -->
+            <tr>
+              <td>
+                <div class="metro">1. Carolina</div>
+              </td>
+              <td>
+                <div class="cell">82</div>
+              </td>
+              <td>
+                <div class="cell">54</div>
+              </td>
+              <td>
+                <div class="cell">20</div>
+              </td>
+              <td>
+                <div class="cell">8</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">116</div>
+              </td>
+              <td>
+                <div class="cell">.707</div>
+              </td>
+              <td>
+                <div class="cell">278</div>
+              </td>
+              <td>
+                <div class="cell">202</div>
+              </td>
+              <td>
+                <div class="cell">+76</div>
+              </td>
+            </tr>
+            <!-- Rangers -->
+            <tr>
+              <td class="rangers">
+                <div class="metro">2. NY Rangers</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">81</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">51</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">24</div>
+              </td>
+              <td class="rangers">
+                <div class="cell">6</div>
+              </td>
+              <td class="rangers2">
+                <div class="cell">108</div>
+              </td>
+              <td>
+                <div class="cell">.667</div>
+              </td>
+              <td>
+                <div class="cell">251</div>
+              </td>
+              <td>
+                <div class="cell">202</div>
+              </td>
+              <td>
+                <div class="cell">+46</div>
+              </td>
+            </tr>
+            <!-- Pittsburgh -->
+            <tr>
+              <td>
+                <div class="metro">3. Pittsburgh</div>
+              </td>
+              <td>
+                <div class="cell">81</div>
+              </td>
+              <td>
+                <div class="cell">45</div>
+              </td>
+              <td>
+                <div class="cell">25</div>
+              </td>
+              <td>
+                <div class="cell">11</div>
+              </td>
+              <td>
+                <div class="cell">101</div>
+              </td>
+              <td>
+                <div class="cell">.623</div>
+              </td>
+              <td>
+                <div class="cell">267</div>
+              </td>
+              <td>
+                <div class="cell">226</div>
+              </td>
+              <td>
+                <div class="cell">+41</div>
+              </td>
+            </tr>
+            <!-- Washington -->
+            <tr>
+              <td>
+                <div class="metro">4. NY Washington</div>
+              </td>
+              <td>
+                <div class="cell">81</div>
+              </td>
+              <td>
+                <div class="cell">44</div>
+              </td>
+              <td>
+                <div class="cell">25</div>
+              </td>
+              <td>
+                <div class="cell">12</div>
+              </td>
+              <td>
+                <div class="cell">100</div>
+              </td>
+              <td>
+                <div class="cell">.617</div>
+              </td>
+              <td>
+                <div class="cell">273</div>
+              </td>
+              <td>
+                <div class="cell">242</div>
+              </td>
+              <td>
+                <div class="cell">+31</div>
+              </td>
+            </tr>
+            <!-- Islanders -->
+            <tr>
+              <td>
+                <div class="metro">5. NY Islanders</div>
+              </td>
+              <td>
+                <div class="cell">81</div>
+              </td>
+              <td>
+                <div class="cell">37</div>
+              </td>
+              <td>
+                <div class="cell">34</div>
+              </td>
+              <td>
+                <div class="cell">10</div>
+              </td>
+              <td>
+                <div class="cell">84</div>
+              </td>
+              <td>
+                <div class="cell">.519</div>
+              </td>
+              <td>
+                <div class="cell">227</div>
+              </td>
+              <td>
+                <div class="cell">231</div>
+              </td>
+              <td>
+                <div class="cell">-4</div>
+              </td>
+            </tr>
+            <!-- Columbus -->
+            <tr>
+              <td>
+                <div class="metro">6. Columbus</div>
+              </td>
+              <td>
+                <div class="cell">81</div>
+              </td>
+              <td>
+                <div class="cell">37</div>
+              </td>
+              <td>
+                <div class="cell">37</div>
+              </td>
+              <td>
+                <div class="cell">7</div>
+              </td>
+              <td>
+                <div class="cell">81</div>
+              </td>
+              <td>
+                <div class="cell">.500</div>
+              </td>
+              <td>
+                <div class="cell">259</div>
+              </td>
+              <td>
+                <div class="cell">295</div>
+              </td>
+              <td>
+                <div class="cell">-36</div>
+              </td>
+            </tr>
+            <!-- New Jersey -->
+            <tr>
+              <td>
+                <div class="metro">7. New Jersey</div>
+              </td>
+              <td>
+                <div class="cell">81</div>
+              </td>
+              <td>
+                <div class="cell">27</div>
+              </td>
+              <td>
+                <div class="cell">45</div>
+              </td>
+              <td>
+                <div class="cell">9</div>
+              </td>
+              <td>
+                <div class="cell">63</div>
+              </td>
+              <td>
+                <div class="cell">.389</div>
+              </td>
+              <td>
+                <div class="cell">245</div>
+              </td>
+              <td>
+                <div class="cell">302</div>
+              </td>
+              <td>
+                <div class="cell">-57</div>
+              </td>
+            </tr>
+            <!-- Philadelphia -->
+            <tr>
+              <td>
+                <div class="metro">8. Philadelphia</div>
+              </td>
+              <td>
+                <div class="cell">81</div>
+              </td>
+              <td>
+                <div class="cell">25</div>
+              </td>
+              <td>
+                <div class="cell">45</div>
+              </td>
+              <td>
+                <div class="cell">11</div>
+              </td>
+              <td>
+                <div class="cell">61</div>
+              </td>
+              <td>
+                <div class="cell">.377</div>
+              </td>
+              <td>
+                <div class="cell">209</div>
+              </td>
+              <td>
+                <div class="cell">294</div>
+              </td>
+              <td>
+                <div class="cell">-85</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <p>
+          The Rangers were able to finish the season strong and lock their
+          position in the playoffs along with seven other teams. The rangers are
+          currently second in the Metropolitan division. If the season ended
+          today, the Rangers would be the 2 seed and face the Pittsburgh
+          Penguins in the first round of the Eastern Conference playoffs. It has
+          been a very successful season thus far for the Rangers, and we are
+          excited to watch as they try to make a deep run in the playoffs for
+          the Stanley Cup!
+        </p>
+      </div>
+    </div>
+    <script>
+      let btn = document.getElementById("forFinal");
+      let before = document.getElementById("begin");
+      let after = document.getElementById("final");
+
+      function showFinal() {
+        before.style.display = "none";
+        after.style.display = "block";
+      }
+    </script>
   </body>
 </html>

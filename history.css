@@ -22,9 +22,11 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
+
 h3 {
   text-align: center;
 }
+
 p {
   text-align: center;
 }
@@ -39,7 +41,10 @@ audio {
   display: flex;
 }
 
-.column {
-  flex: 50%;
-  padding: 5px;
+.column{
+  text-align: center;
+}
+
+#cup{
+  width: 50%;
 }

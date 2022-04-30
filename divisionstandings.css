@@ -11,9 +11,11 @@ h1 {
   font-style: italic;
   text-decoration: underline #c8102e;
 }
+
 table {
   width: 80%;
 }
+
 table,
 td {
   border: 1px black solid;
@@ -52,3 +54,9 @@ td.rangers2 {
 p {
   text-align: center;
 }
+
+#final{
+  display: none;
+}
+
+

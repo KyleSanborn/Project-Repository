@@ -66,22 +66,6 @@
         float: right;
         margin-right: 5px;
       }
-
-      @media screen and (max-width: 500px) {
-        .header a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-
-        .header-center {
-          float: none;
-        }
-
-        .header-right {
-          float: none;
-        }
-      }
     </style>
   </head>
   <body>
@@ -107,16 +91,30 @@
 
     <div class="box">
       <h1>Contact Us:</h1>
-      <img class="contact1" src="images/contact1.jpg" alt="contact1" />
+      <div id="flip">
+        <img
+          class="contact1"
+          id="images"
+          src="images/contact1.jpg"
+          onmouseover="mouseOver()"
+          onmouseout="mouseOut()"
+          alt="contact1"
+        />
+      </div>
       <br />
       <div class="form">
-        <form action="https://oim-apis.herokuapp.com/form2" method="post">
+        <form
+          id="form"
+          action="https://oim-apis.herokuapp.com/form2"
+          method="post"
+          onsubmit="validateForm()"
+        >
           <div>
             <label for="firstname-input">First Name:</label>
             <input
               type="text"
               id="firstname-input"
-              name="first name"
+              name="firstname"
               placeholder="First Name"
             />
           </div>
@@ -125,7 +123,7 @@
             <label for="lastname-input">Last Name: </label>
             <input
               type="text"
-              name="last name"
+              name="lastname"
               id="lastname-input"
               placeholder="Last Name"
             />
@@ -161,5 +159,32 @@
         </form>
       </div>
     </div>
+    <script>
+      function validateForm() {
+        let myForm = document.getElementById("form");
+        let first = myForm.firstname.value;
+        let last = myForm.lastname.value;
+        let email = myForm.email.value;
+        let comments = myForm.comments.value;
+
+        if (first == "") {
+          alert("Please enter first name.");
+        } else if (last == "") {
+          alert("Please enter last name.");
+        } else if (email == "") {
+          alert("Please enter an email adress.");
+        } else if (comments == "") {
+          alert("Please leave a comment");
+        }
+      }
+
+      function mouseOver() {
+        document.getElementById("images").src = "images/contact2.jpg";
+      }
+
+      function mouseOut() {
+        document.getElementById("images").src = "images/contact1.jpg";
+      }
+    </script>
   </body>
 </html>

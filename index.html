@@ -72,7 +72,7 @@
         .header a {
           float: none;
           display: block;
-          text-align: left;
+          text-align: center;
         }
 
         .header-center {
@@ -81,6 +81,19 @@
 
         .header-right {
           float: none;
+        }
+        .logo {
+          text-align: right;
+        }
+
+        .box {
+          margin-left: auto;
+          margin-right: auto;
+          width: 400px;
+        }
+
+        img {
+          width: 90%;
         }
       }
     </style>
@@ -102,32 +115,114 @@
           class="logo"
           src="images/rangersringlogo.png"
           alt="rangersringlogo"
+          title="rangers ring logo"
         />
       </div>
     </div>
 
     <div class="box">
       <h1>Welcome to The Rangers Ring!</h1>
-      <img class="homeimg" src="images/rangershome.jpg" alt="rangershome" />
-      <p>
-        Here in the Rangers Ring, we're crazy about all things New York Ranger
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img
+            src="images/rangershome.jpg"
+            alt="rangershome"
+            title="action shot"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="images/rangershome1.jpg"
+            alt="rangershome1"
+            title="Chris Kreider"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="images/rangershome2.jpg"
+            alt="rangershome2"
+            title="Celebrating"
+          />
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <br />
+      <div>
+        <p>
+          Here in the Rangers Ring, we're crazy about all things New York Ranger
+          related. Given the recent success of the Rangers this season, we
+          wanted to create a place where it is easy for fellow fans to follow
+          the NHL playoff hunt! We like to focus mostly on the Ranger's schedule
+          and division standings as they chase after first place in the eastern
+          conference. We also aim to bring the playoff history of the New York
+          Rangers back to life by sharing some of our favorite memories from
+          past playoff runs! We hope that you enjoy our content and please enjoy
+          exploring our website! If you would like to contact us or let us know
+          what we can improve on, please let us know via our contact page! Our
+          contact page is accessable through our navigation bar or sitemap!
+          Last, but most certainly not least... Let's Go Rangers!!
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active1", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active1";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+    </script>
+    <!-- <div class="box">
+      <h1>Welcome to The Rangers Ring!</h1>
+      <div class ="carousel">
+        <div class ="carousel-images">
+          <img class="homeimg" src="images/rangershome2.jpg" alt="rangershome2" id="lastClone"/>    
+          <img class="homeimg" src="images/rangershome.jpg" alt="rangershome"/>
+          <img class="homeimg" src="images/rangershome1.jpg" alt="rangershome1"/>
+          <img class="homeimg" src="images/rangershome2.jpg" alt="rangershome2"/>
+          <img class="homeimg" src="images/rangershome.jpg" alt="rangershome" id="firstClone"/>
+        </div>
+      </div>  
+
+      
+      <p>Here in the Rangers Ring, we're crazy about all things New York Ranger
         related. Given the recent success of the Rangers this season, we wanted
         to create a place where it is easy for fellow fans to follow the NHL
         playoff hunt! We like to focus mostly on the Ranger's schedule and
         division standings as they chase after first place in the eastern
         conference. We also aim to bring the playoff history of the New York
         Rangers back to life by sharing some of our favorite memories from past
-        playoff runs!
-      </p>
-      <img class="homeimg" src="images/rangershome1.jpg" alt="rangershome1" />
-      <p>
-        We hope that you enjoy our content and please enjoy exploring our
+        playoff runs! We hope that you enjoy our content and please enjoy exploring our
         website! If you would like to contact us or let us know what we can
         improve on, please let us know via our contact page! Our contact page is
-        accessable through our navigation bar or sitemap!
-      </p>
-      <img class="homeimg" src="images/rangershome2.jpg" alt="rangershome2" />
-      <p>Last, but most certainly not least... Let's Go Rangers!!</p>
+        accessable through our navigation bar or sitemap! Last, but most certainly not least... Let's Go Rangers!!</p>
     </div>
+  <script>
+
+  </script> -->
   </body>
 </html>

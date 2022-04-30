@@ -3,7 +3,9 @@
   width: 1500px;
   border: 20px solid #c8102e;
   padding: 50px;
-  margin: 20px;
+  margin: 20px; 
+  position: relative;
+  overflow: hidden;
 }
 
 h1 {
@@ -11,13 +13,45 @@ h1 {
   font-style: italic;
   text-decoration: underline #c8102e;
 }
-.homeimg {
+
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
+  height: 60%;
 }
 
 p {
   text-align: center;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.active1 {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }

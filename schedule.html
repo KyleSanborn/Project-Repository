@@ -66,22 +66,6 @@
         float: right;
         margin-right: 5px;
       }
-
-      @media screen and (max-width: 500px) {
-        .header a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-
-        .header-center {
-          float: none;
-        }
-
-        .header-right {
-          float: none;
-        }
-      }
     </style>
   </head>
   <body>
@@ -105,13 +89,18 @@
       </div>
     </div>
 
-    <div class="box">
+    <div id="box">
       <h1>Schedule:</h1>
       <table>
         <caption>
           <h2>March 2022</h2>
           <h3 class="blue">Blue = Home Game</h3>
           <h3 class="red">Red = Away Game</h3>
+          <h3>
+            <button id="button" onclick="hideMarch(), showApril()">
+              Click to view April schedule
+            </button>
+          </h3>
         </caption>
         <thead>
           <tr>
@@ -209,7 +198,7 @@
               <div class="cell"><span class="day">24</span> <br /></div>
             </td>
             <td class="homegame">
-              <div class="cell"><span class="day">25</span>VS PIT</div>
+              <div class="cell"><span class="day">25</span>NYR 5, PIT 1</div>
             </td>
             <td>
               <div class="cell"><span class="day">26</span> <br /></div>
@@ -217,16 +206,20 @@
           </tr>
           <tr>
             <td class="homegame">
-              <div class="cell"><span class="day">27</span>VS BUF</div>
+              <div class="cell">
+                <span class="day">27</span>NYR 5, BUF 4 (OT)
+              </div>
             </td>
             <td>
               <div class="cell"><span class="day">28</span> <br /></div>
             </td>
             <td class="awaygame">
-              <div class="cell"><span class="day">29</span>@ PIT</div>
+              <div class="cell"><span class="day">29</span>NYR 3, PIT 2</div>
             </td>
             <td class="awaygame">
-              <div class="cell"><span class="day">30</span>@ DET</div>
+              <div class="cell">
+                <span class="day">30</span>NYR 5, DET 4 (OT)
+              </div>
             </td>
             <td>
               <div class="cell"><span class="day">31</span> <br /></div>
@@ -237,5 +230,161 @@
         </tbody>
       </table>
     </div>
+
+    <!-- April Schedule: -->
+    <div id="box1">
+      <h1>Schedule:</h1>
+      <table>
+        <caption>
+          <h2>April 2022</h2>
+          <h3 class="blue">Blue = Home Game</h3>
+          <h3 class="red">Red = Away Game</h3>
+          <h3>
+            <button id="button" onclick="hideApril(), showMarch()">
+              Click to view March schedule
+            </button>
+          </h3>
+        </caption>
+        <thead>
+          <tr>
+            <td class="weekdays">Sun</td>
+            <td class="weekdays">Mon</td>
+            <td class="weekdays">Tue</td>
+            <td class="weekdays">Wed</td>
+            <td class="weekdays">Thu</td>
+            <td class="weekdays">Fri</td>
+            <td class="weekdays">Sat</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="homegame">
+              <div class="cell"><span class="day">1</span>NYR 3, NYI 0</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">2</span> <br /></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="homegame">
+              <div class="cell"><span class="day">3</span>PHI 4, NYR 3</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">4</span> <br /></div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">5</span>NYR 3, NJD 1</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">6</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">7</span>NYR 3, PIT 0</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">8</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">9</span>NYR 5, OTT 1</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cell"><span class="day">10</span> <br /></div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">11</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">12</span>CAR 4, NYR 2</div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">13</span> NYR 4, PHI 0</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">14</span> <br /></div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">15</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">16</span>NYR 4, DET 0</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cell"><span class="day">17</span> <br /></div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">18</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">19</span>NYR 3, WPG 0</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">20</span> <br /></div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">21</span>NYR 6, NYI 3</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">22</span> <br /></div>
+            </td>
+            <td class="awaygame">
+              <div class="cell"><span class="day">23</span>BOS 3, NYR 1</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cell"><span class="day">24</span> <br /></div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">25</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">26</span>CAR 4, NYR 3</div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">27</span>MTL 4, NYR 3</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">28</span> <br /></div>
+            </td>
+            <td class="homegame">
+              <div class="cell"><span class="day">29</span>VS WSH</div>
+            </td>
+            <td>
+              <div class="cell"><span class="day">30</span> <br /></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      let btn = document.getElementById("button");
+      let march = document.getElementById("box");
+      let april = document.getElementById("box1");
+
+      function hideMarch() {
+        march.style.display = "none";
+      }
+
+      function showApril() {
+        april.style.display = "block";
+      }
+
+      function hideApril() {
+        april.style.display = "none";
+      }
+
+      function showMarch() {
+        march.style.display = "block";
+      }
+    </script>
   </body>
 </html>

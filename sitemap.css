@@ -27,20 +27,20 @@ li a {
   font-size: large;
 }
 
-.sitemap1 {
+#sitemap1 {
   float: left;
   width: 250px;
   margin-left: 150px;
 }
 
-.sitemap2 {
+#sitemap2 {
   float: right;
   width: 250px;
   margin-right: 150px;
 }
 
-.sitemap3 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#spin{
+  perspective: 1000px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
